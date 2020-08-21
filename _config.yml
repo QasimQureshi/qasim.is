@@ -16,12 +16,8 @@
 title: Qasim Qureshi
 email: qasim@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Into Rails, JS and drones. And hiking, 360° photography and drones!
-
-Rails and JS(Node+React) generalist with 8+ years of professional experience. 
-
-A sense of humour, a lack of ego, and a desire to do great work. I aspire to be a helper, a go-getter, and always be up for a good challenge.
-
+  Thanks for stopping by!👋
+  I'm into Ruby, JS, decentralised Web3 apps, hiking, 360° photography, and drones
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.qasim.is" # the base hostname & protocol for your site, e.g. http://example.com
 
