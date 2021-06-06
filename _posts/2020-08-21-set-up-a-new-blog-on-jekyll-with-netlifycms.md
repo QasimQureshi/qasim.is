@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Migrated from Gatsby. Blog entries to follow.
-categories: writing migration
+categories: migration
 ---
 The previous iteration of this ran on Gatsby.js, and this runs Jekyll integrated with Netlify CMS.
 
