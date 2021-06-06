@@ -18,7 +18,7 @@ email: qasim@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thanks for stopping by!👋
   I'm into Ruby, JS, decentralised Web3 apps, hiking, 360° photography, and drones
-baseurl: "/writing" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.qasim.is" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
