@@ -15,4 +15,4 @@ I typically write about everything that interests me - the tech I work with, ran
 Alan Greenspan talked about *increased worker insecurity*. And how it made the American workforce more productive despite wage stagnation. I sometimes wonder if that's why new frameworks keep cropping up.
 
 \
-Testing: Did the updated GitHub oauth connection work? YES
+Testing: Did the updated GitHub oauth connection work? YESS
