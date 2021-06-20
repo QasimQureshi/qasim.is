@@ -16,7 +16,9 @@
 title: Qasim Qureshi
 email: qasim@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Thanks for stopping by!👋
+  Our knowledge has made us cynincal
+  Our cleverness, hard and unkind
+
   I'm into Ruby, JS, decentralised Web3 apps, hiking, 360° photography, and drones
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.qasim.is" # the base hostname & protocol for your site, e.g. http://example.com

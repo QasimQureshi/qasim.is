@@ -1,0 +1,23 @@
+---
+layout: page
+title: Writing
+permalink: /writing/
+---
+
+<div class="home">
+  <!-- <h2 class="post-list-heading">Posts</h2> -->
+    <ul class="post-list">
+      {% for post in site.posts reversed %}
+      <li>
+        <span class="post-meta">{{post.date | date: '%B %d, %Y'}}</span>
+        <h3>
+          <a class="post-link" href="{{post.url}}">
+            {{post.title}}
+          </a>
+        </h3>
+        <p>{{post.excerpt}}</p>
+      </li>
+      {% endfor %}
+
+    </ul>
+</div>
