@@ -1,0 +1,92 @@
+---
+  layout: default
+---
+
+<div class="qrt-content" id="qrt-scroll-content">
+  <div class="qrt-half-content-frame">
+    <div class="qrt-left">
+
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+
+          <div class="qrt-about-me-cover">
+            <img src="{{page.profile_image}}" alt="{{site.first_name}}">
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-12 align-self-center">
+
+          <div class="qrt-member-about">
+            <h3 class="qrt-mb-5">{{page.myname}}</h3>
+            <div class="qrt-el-suptitle">{{page.occupation}}</div>
+
+            <div class="qrt-divider"></div>
+
+            <ul class="qrt-table">
+              
+              <li>
+                <h5>City:</h5><span>{{page.city}}</span>
+              </li>
+              <li>
+                <h5>Education:</h5><span>{{page.education}}</span>
+              </li>
+              <li>
+                <h5>Email:</h5><span><a class="qrt-cursor-color" href="mailto:{{site.email}}">{{site.email}}</a></span>
+              </li>
+            </ul>
+
+            <div class="qrt-divider"></div>
+
+            <ul class="qrt-social-list">
+              <li><a target="_blank" href="https://github.com/{{site.github_username}}" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-github"></i></a></li>
+              <li><a target="_blank" href="https://instagram.com/{{site.instagram_username}}" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-instagram"></i></a></li>
+              <li><a target="_blank" href="https://twitter.com/{{site.twitter_username}}" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-twitter"></i></a></li>
+              <li><a target="_blank" href="https://linkedin.com/in/{{site.linkedin_username}}" class="qrt-cursor-scale qrt-cursor-color"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+
+          <h3 class="qrt-mb-20">About {{site.first_name}}</h3>
+
+        </div>
+        <div class="col-lg-12 qrt-mb-25">
+          {{content}}
+        </div>
+        <!-- <div class="col-lg-12">
+
+          <blockquote>
+            Change is an opportunity! We want to lead people towards durable solutions and designs that enhance feelings of closeness, wellbeing and hopefully, happiness.
+          </blockquote>
+
+        </div> -->
+      </div>
+
+      <div class="qrt-divider"></div>
+
+    </div>
+    <div id="fixed" class="qrt-right">
+      <div class="qrt-half-banner qrt-left-align qrt-animated-zoom">
+        <div class="qrt-image-frame">
+          <img src="img/banners/banner3.jpg" alt="banner">
+        </div>
+        <div class="qrt-overlay">
+          <!-- <div class="qrt-scroll-hint">
+            <span></span>
+          </div> -->
+          <div class="qrt-banner-title">
+            <h2 class="qrt-white qrt-mb-10">{{site.name}}</h2>
+            <div class="qrt-divider-2"></div>
+            <!-- <div class="qrt-text qrt-white qrt-mb-20">Dolor sit amet, consectetur adipisicing elit. <br>Vel excepturi, earum inventore.</div> -->
+            <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-anima-link"><span>@ Say Hello!</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>

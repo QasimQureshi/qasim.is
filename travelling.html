@@ -1,0 +1,72 @@
+---
+layout: default
+title: Travelling
+permalink: travelling
+---
+<div class="qrt-content" id="qrt-scroll-content">
+  <div class="qrt-half-content-frame">
+    <div class="qrt-left">
+
+      {% assign first_picture = site.travelling | first %} 
+      <iframe width="100%" height="350px" allowfullscreen="true" src="https://momento360.com/e/u/{{first_picture.pid}}"></iframe>
+
+      <div class="qrt-filter qrt-mb-40">
+        <a href="#" data-filter="*" class="qrt-work-category qrt-current qrt-filter-icon qrt-cursor-color qrt-cursor-scale"><i class="fas fa-filter"></i>All Categories</a>
+        <a href="#" data-filter=".architecture" class="qrt-work-category qrt-cursor-color qrt-cursor-scale">Architecture</a>
+      </div>
+
+      <div class="qrt-masonry-grid qrt-mb-40">
+        <div class="qrt-grid-sizer"></div>
+        
+        {% for image in site.travelling %}
+        {% assign mod5 = forloop.index | modulo: 5 %}
+        
+        <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 {% if forloop.index == 1 or mod5 == 1 %}qrt-masonry-grid-item-h-x-2{% endif %} {{image.album}}">
+          <div class="qrt-work-item">
+            <a data-fancybox="{{image.album}}" data-type="iframe" data-src="https://momento360.com/e/u/{{image.pid}}" href="img/projects/original-size/v-1.jpg" class="qrt-cursor-scale qrt-work-cover-frame">
+              <img src="https://production-cdn.momento360.com/e/u/{{image.pid}}/sphere/preview" alt="work cover">
+              <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+              <div class="qrt-work-category"><span>{{image.region}}</span></div>
+            </a>
+            <div class="qrt-work-descr">
+              <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">{{image.caption}}</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+        <div class="qrt-masonry-grid-item qrt-masonry-grid-item-50 architecture">
+          <div class="qrt-work-item"><a data-fancybox="works" href="img/projects/original-size/10.jpg" class="qrt-cursor-scale qrt-work-cover-frame"><img src="img/projects/thumbnails/10.jpg" alt="work cover">
+              <div class="qrt-item-zoom qrt-cursor-color"><i class="fas fa-expand"></i></div>
+              <div class="qrt-work-category"><span>architecture</span></div>
+            </a>
+            <div class="qrt-work-descr">
+              <h4 class="qrt-cursor-color qrt-white"><a href="single-work-1.html" class="qrt-anima-link">Weelywally</a></h4><a href="single-work-1.html" class="qrt-cursor-scale qrt-work-more qrt-anima-link"><i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="qrt-call-to-action">
+            <h4>Do you have a project?</h4><a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="fixed" class="qrt-right">
+      <div class="qrt-half-banner qrt-left-align qrt-animated-zoom"><video autoplay loop class="qrt-video-background" poster="img/video/bg-video-placeholder.jpg" muted>
+          <source src="img/video/bg-video.mp4" type="video/mp4"></video>
+        <div class="qrt-overlay">
+          <div class="qrt-scroll-hint"><span></span></div>
+          <div class="qrt-banner-title">
+            <h2 class="qrt-white qrt-mb-10">360 Photos</h2>
+            <div class="qrt-divider-2"></div>
+            <div class="qrt-text qrt-white qrt-mb-20">360s are so much fun with VR goggles! It's like travelling back in time & looking around</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
