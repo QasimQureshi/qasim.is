@@ -17,7 +17,7 @@ title: Qasim Qureshi
 email: qasim@hey.com
 description: >- # this means to ignore newlines until "baseurl:"
   Our knowledge has made us cynincal
-  Our cleverness, hard and unkind
+  Our cleverness, hard and unkind.
 
   I'm into Ruby, JS, decentralised Web3 apps, hiking, 360° photography, and drones
 baseurl: "/" # the subpath of your site, e.g. /blog
