@@ -1,0 +1,4 @@
+navigation:
+  name: "booga"
+  url: "/booga"
+  enabled: true

@@ -1,13 +1,4 @@
-/* -------------------------------------------
 
-Name: 		Quarty
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
 /*--------------------------------------------
 
 0. color variable
@@ -88,6 +79,16 @@ common
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-font-smoothing: antialiased; }
+
+.tag {
+  padding: 5px 10px;
+  background: #aaa;
+  border-radius: 15px;
+  color: #fff;
+  text-transform: inherit;
+  font-weight: bold;
+  padding-top: 7px;
+}
 
 body {
   margin: 0;
@@ -233,6 +234,8 @@ blockquote {
   margin: 0 0 20px;
   height: 2px;
   border-radius: 1px; }
+
+
 
 /* ----- buttons ----- */
 .qrt-btn {
@@ -2293,6 +2296,7 @@ content
   height: 45px; }
 
 /* ----- blog card ----- */
+
 .qrt-post-date {
   background-color: #28292c;
   font-weight: 600;
@@ -3233,4 +3237,9 @@ plugins customization
     -webkit-transform: scale(1.2) translateY(0);
             transform: scale(1.2) translateY(0); } }
 
-/*# sourceMappingURL=style.css.map */
+.qrt-post-frame.default-image .qrt-post-thumb {
+  background-color: #fafafa;
+}
+.qrt-post-frame.default-image .qrt-post-thumb img {
+  object-fit: contain;
+}

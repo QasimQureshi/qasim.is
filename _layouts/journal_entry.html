@@ -1,0 +1,112 @@
+---
+layout: default
+---
+{% assign posts = site.writing | where_exp:"writing","writing.url != page.url" %}
+<!-- <link rel="stylesheet" href="https://raw.githubusercontent.com/jwarby/pygments-css/master/native.css" /> -->
+<link rel="stylesheet" href="/css/fruity.css">
+<div class="qrt-content" id="qrt-scroll-content">
+  <div class="qrt-half-content-frame">
+    <div class="qrt-left">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="qrt-mb-40">{{ page.title }}</h2>
+        </div>
+        <div class="col-lg-12">
+          <img src="{{page.image}}" alt="thumbnail" class="qrt-just-img">
+          <div class="qrt-post-date qrt-mb-40">
+            {% for tag in page.categories %}
+              <span class='tag'>{{tag}}</span>
+            {% endfor %}
+            <span><i class="far fa-clock"></i>{{page.date | date_to_string}}</span>
+          </div>
+
+        </div>
+        <div class="col-lg-12">
+          {{page.content}}
+        </div>
+      </div>
+
+      <div class="qrt-divider qrt-space-fix"></div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="qrt-mb-40">Read more</h3>
+        </div>
+        <div class="col-lg-12">
+          <div class="swiper-container qrt-pop-post-slider">
+            <div class="swiper-wrapper">
+              {% for post in posts %}
+              <div class="swiper-slide">
+
+                <div class="qrt-post-frame qrt-popular">
+                  <a href="{{post.url}}" class="qrt-post-thumb qrt-cursor-scale qrt-anima-link">
+                    <img src="{{post.image}}" alt="thumbnail">
+                    <div class="qrt-post-date">
+                      <span><i class="far fa-user"></i>{{post.categories | first}}</span>
+                      <span><i class="far fa-clock"></i>{{post.date | date_to_string}}</span>
+                    </div>
+                  </a>
+                  <div class="qrt-post-descr">
+                    <div>
+                      <h4 class="qrt-cursor-color qrt-post-title"><a href="{{post.url}}" class="qrt-anima-link">{{post.title}}</a></h4>
+                      <div class="qrt-port-short-text">{{post.excerpt}}</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              {% endfor %}
+              
+            </div>
+          </div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="swiper-pp-pagination qrt-cursor-color qrt-cursor-scale"></div>
+
+        </div>
+        <div class="col-6">
+
+          <div class="qrt-slider-nav">
+            <!-- prev -->
+            <div class="qrt-slider-prev qrt-pp-prev qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-left"></i></div>
+            <!-- next -->
+            <div class="qrt-slider-next qrt-pp-next qrt-cursor-color qrt-cursor-scale"><i class="fas fa-arrow-right"></i></div>
+          </div>
+
+        </div>
+      </div>
+      <div class="qrt-divider"></div>
+
+      <!-- <div class="row">
+        <div class="col-lg-12">
+          <div class="qrt-call-to-action">
+            <h4>Do you have a project?</h4><a class="qrt-btn qrt-btn-sm qrt-btn-color qrt-cursor-scale qrt-anima-link" href="contact.html"><span>Let's discuss</span></a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div id="fixed" class="qrt-right">
+      <div class="qrt-half-banner qrt-left-align qrt-animated-show">
+        <div class="qrt-image-frame" style="filter: blur(3px)">
+          <!-- <img src="assets/images/backgrounds/KotaKinabalu.jpg" alt="banner"> -->
+          <img src="assets/images/backgrounds/SouthChinaSea.jpg" alt="banner">
+        </div>
+        <div class="qrt-overlay">
+          <div class="qrt-scroll-hint"><span></span></div>
+          <div class="qrt-banner-title">
+            <!-- <h2 class="qrt-white qrt-mb-10">Newsletter</h2>
+            <div class="qrt-divider-2"></div>
+            <div class="qrt-text qrt-white qrt-mb-20">Dolor sit amet, consectetur adipisicing elit. <br>Vel excepturi, earum inventore.</div>
+            <a href="contact.html" class="qrt-btn qrt-btn-md qrt-btn-color qrt-anima-link">
+              <span>Get in touch</span>
+            </a>
+            -->
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
